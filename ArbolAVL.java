@@ -314,7 +314,7 @@ public class ArbolAVL<T extends Comparable<T>> {
         }
         //-------2. ELIMINA AVL --------
         boolean bandera = false;
-        NodoAVL<T> papaTemp = temp.getPapa();
+        NodoAVL<T> papaTemp = temp;
         while (!bandera && papaTemp != null){
             papaTemp.setFE(calculaFe(papaTemp));
             if (papaTemp.getFE() == 1 || papaTemp.getFE() == -1)
